@@ -2,17 +2,17 @@
 base on nvcr.io/nvidia/cuda img, tensorflow and another application
 
 ## include
-Ubuntu 16.04 
-CUDA9.0
-CUDNN7.1
+* Ubuntu 16.04 
+* CUDA9.0
+* CUDNN7.1
 -
-Keras 2.1.5
-PyTorch v0.3.1
-TensorFlow v1.6.0
-Python: 3.6 
-Caffe2
-R language v 3.4.4
-oracle Java 8 
+* Keras 2.1.5
+* PyTorch v0.3.1
+* TensorFlow v1.6.0
+* Python: 3.6 
+* Caffe2
+* R language v 3.4.4
+* oracle Java 8 
 
 Dockerhub
 

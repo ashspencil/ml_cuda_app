@@ -24,8 +24,8 @@ RUN apt-get update -y && \
     apt-get update -y && \
     apt-get install -y python3.6 python3.6-dev && \
     cd /usr/bin/ ; rm python3 ; ln -s python3.6 python3
+    
 ### Tensorflow v1.6.0
-
 RUN apt-get install -y python3-pip  && \
     pip3 install tensorflow-gpu==1.6
 
@@ -36,6 +36,7 @@ RUN pip3 install keras==2.1 && \
     pip3 install pillow && \
     pip3 install h5py && \
     pip3 install Theano
+    
 ### pytorch
 RUN pip3 install http://download.pytorch.org/whl/cu90/torch-0.3.1-cp36-cp36m-linux_x86_64.whl && \
     pip3 install torchvision
@@ -65,11 +66,11 @@ RUN wget https://github.com/git/git/archive/v2.17.1.zip -O git.zip && \
     git --version
 
 ### Caffe2 Dependencies
-
 RUN apt-get update -y && \
     apt-get install -y cmake libgoogle-glog-dev libgtest-dev liblmdb-dev libopencv-dev libopenmpi-dev libsnappy-dev libprotobuf-dev openmpi-bin openmpi-doc protobuf-compiler libgflags-dev && \
     pip3 install future && \
     pip3 install protobuf
+    
 ### important 16.04
 #RUN apt install -y --no-install-recommends libgflags-dev
 
@@ -84,6 +85,7 @@ WORKDIR build
 RUN cmake .. -DUSE_MPI=OFF --no-warn-unused-cli && \
     make install
 WORKDIR /
+
 ## oracle java 8 
 RUN apt-get install -y software-properties-common debconf-utils && \
     add-apt-repository -y ppa:webupd8team/java && \

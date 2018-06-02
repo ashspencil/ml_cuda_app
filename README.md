@@ -5,7 +5,7 @@ base on nvcr.io/nvidia/cuda img, tensorflow and another application
 * Ubuntu 16.04 
 * CUDA9.0
 * CUDNN7.1
--
+
 * Keras 2.1.5
 * PyTorch v0.3.1
 * TensorFlow v1.6.0

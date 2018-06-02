@@ -31,8 +31,11 @@ NV_GPU='0' nvidia-docker run -ti (image) /bin/bash
 
 > [Nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
 
+
 2.OR you can modify anything.
+
 
 3.Enjoy yourself !!
 
-#If there is a problem or bug , just issue me :)
+
+###If there is a problem or bug , just issue me :)

@@ -1,6 +1,6 @@
 FROM 55636e534686
 
-MAINTAINER ashspencil <s04353014@thu.edu.tw>
+MAINTAINER ashspencil <pencil302@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN groupadd -g 3000 aigroup && \

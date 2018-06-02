@@ -20,7 +20,6 @@ Dockerhub
 
 ```
 docker pull ashspencil/ml-cuda-app
-
 ```
 ## usage
 

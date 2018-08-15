@@ -38,8 +38,8 @@ RUN pip3 install keras==2.1 && \
     pip3 install Theano
     
 ### pytorch
-RUN pip3 install http://download.pytorch.org/whl/cu90/torch-0.3.1-cp36-cp36m-linux_x86_64.whl && \
-    pip3 install torchvision
+#RUN pip3 install http://download.pytorch.org/whl/cu90/torch-0.3.1-cp36-cp36m-linux_x86_64.whl && \
+RUN pip3 install torch torchvision
 
 ### R for 3.4.4
 RUN apt-get update -y && \

@@ -7,7 +7,7 @@ base on nvcr.io/nvidia/cuda img, tensorflow and another application
 * CUDNN7.1
 
 * Keras 2.1.5
-* PyTorch v0.3.1
+* PyTorch v0.4.1
 * TensorFlow v1.6.0
 * Python: 3.6 
 * Caffe2

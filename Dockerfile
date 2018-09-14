@@ -1,4 +1,4 @@
-FROM 55636e534686
+FROM 56240d7febea
 
 MAINTAINER ashspencil <pencil302@gmail.com>
 

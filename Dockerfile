@@ -1,3 +1,4 @@
+### Fix Cudnn7.1 to 7.0
 FROM 56240d7febea
 
 MAINTAINER ashspencil <pencil302@gmail.com>
@@ -32,7 +33,7 @@ RUN apt-get install -y python3-pip  && \
 ### keras
 RUN pip3 install keras==2.1 && \
     pip3 install numpy scipy && \
-    pip3 install scikit-learn && \
+    pip3 install -U scikit-learn==0.19.2 && \
     pip3 install pillow && \
     pip3 install h5py && \
     pip3 install Theano
@@ -40,6 +41,12 @@ RUN pip3 install keras==2.1 && \
 ### pytorch
 #RUN pip3 install http://download.pytorch.org/whl/cu90/torch-0.3.1-cp36-cp36m-linux_x86_64.whl && \
 RUN pip3 install torch torchvision
+
+### pandas 
+RUN pip3 install pandas==0.23.4
+
+### tqdm
+RUN pip3 install tqdm
 
 ### R for 3.4.4
 RUN apt-get update -y && \

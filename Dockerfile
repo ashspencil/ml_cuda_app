@@ -56,7 +56,6 @@ RUN apt-get update -y && \
     apt-get install -y texlive-latex-base libcairo2-dev  && \
     apt-get install -y apt-transport-https && \
     apt-get install -y software-properties-common && \
-    cd /usr/lib/python3/dist-packages/ ; cp apt_pkg.cpython-35m-x86_64-linux-gnu.so apt_pkg.so && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 && \
     add-apt-repository "deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/" && \
     apt-get update -y && \

@@ -56,7 +56,7 @@ RUN apt-get update -y && \
     apt-get install -y texlive-latex-base libcairo2-dev  && \
     apt-get install -y apt-transport-https && \
     apt-get install -y software-properties-common && \
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 && \
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 
     
 WORKDIR /usr/lib/python3/dist-packages/
 

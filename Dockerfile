@@ -57,9 +57,15 @@ RUN apt-get update -y && \
     apt-get install -y apt-transport-https && \
     apt-get install -y software-properties-common && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 && \
+    
+WORKDIR /usr/lib/python3/dist-packages/
+
+RUN cp apt_pkg.cpython-35m-x86_64-linux-gnu.so apt_pkg.so && \
     add-apt-repository "deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/" && \
     apt-get update -y && \
     apt-get -y install r-base=3.4.4-1xenial0
+    
+WORKDIR /root
 
 ### install git
 RUN wget https://github.com/git/git/archive/v2.17.1.zip -O git.zip && \
